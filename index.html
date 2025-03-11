@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kode Pot</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header></header>
+    <h1>Test, Learn, and Design</h1>
+
+    <div class="container">
+      <!-- Left half: Code Editors -->
+      <div class="code-area" id="leftArea">
+        <!-- HTML Code Section -->
+        <div class="editor">
+          <h2>HTML</h2>
+          <textarea
+            id="htmlCode"
+            placeholder="Write your HTML here..."
+            oninput="runCode()"
+          ></textarea>
+        </div>
+
+        <!-- CSS Code Section -->
+        <div class="editor">
+          <h2>CSS</h2>
+          <textarea
+            id="cssCode"
+            placeholder="Write your CSS here..."
+            oninput="runCode()"
+          ></textarea>
+        </div>
+
+        <!-- JavaScript Code Section -->
+        <div class="editor">
+          <h2>JavaScript</h2>
+          <textarea
+            id="jsCode"
+            placeholder="Write your JavaScript here..."
+            oninput="runCode()"
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Resizable Divider -->
+      <div class="resizer" id="resizer"></div>
+
+      <!-- Right half: Result -->
+      <div class="result-area" id="rightArea">
+        <h2>Result</h2>
+        <iframe id="resultFrame"></iframe>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
