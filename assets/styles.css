@@ -16,9 +16,32 @@ h1 {
 
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
 }
+
 .header img {
   width: 100px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #ff7300;
 }
 
 .container {
