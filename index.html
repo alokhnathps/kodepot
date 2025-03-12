@@ -36,6 +36,16 @@
           ></textarea>
         </div>
 
+        <!-- SCSS Code Section -->
+        <div class="editor">
+          <h2>SCSS</h2>
+          <textarea
+            id="scssCode"
+            placeholder="Write your SCSS here..."
+            oninput="runCode()"
+          ></textarea>
+        </div>
+
         <!-- JavaScript Code Section -->
         <div class="editor">
           <h2>JavaScript</h2>
@@ -44,6 +54,29 @@
             placeholder="Write your JavaScript here..."
             oninput="runCode()"
           ></textarea>
+        </div>
+
+        <!-- External Resource Links -->
+        <div class="editor">
+          <h2>External Resources</h2>
+          <input
+            type="text"
+            id="cssUrl"
+            placeholder="External CSS URL"
+            oninput="runCode()"
+          />
+          <input
+            type="text"
+            id="jsUrl"
+            placeholder="External JS URL"
+            oninput="runCode()"
+          />
+        </div>
+
+        <!-- Buttons -->
+        <div class="editor">
+          <button id="runBtn" onclick="runCode()">Run</button>
+          <button id="clearBtn" onclick="clearCode()">Clear</button>
         </div>
       </div>
 
@@ -58,6 +91,7 @@
     </div>
 
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.11.1/sass.sync.min.js"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
